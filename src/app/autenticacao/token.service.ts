@@ -14,11 +14,12 @@ export class TokenService {
     localStorage.setItem(KEY, token);
   }
 
-  excluiToken(){
+  excluiToken() {
     localStorage.removeItem(KEY);
   }
 
-  possuiToken(){
+  possuiToken() {
     return !!this.retornaToken();
   }
+  
 }
